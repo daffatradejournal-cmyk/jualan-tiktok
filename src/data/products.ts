@@ -3,23 +3,24 @@ import { Product, FaqItem } from '../types';
 export const PRODUCTS: Product[] = [
   {
     id: 'wps',
-    category: 'Setup Tablet Kerja',
-    badge: 'Terlaris',
+    category: 'Produktivitas Tablet & HP',
+    badge: 'Paling Laris',
     discountBadge: 'Diskon 29%',
-    title: 'Pemasangan WPS Office PC Level Android Tablet',
-    headline: 'Ubah Tablet Android Anda Menjadi Laptop Kerja Lengkap',
+    title: 'Setup WPS Office PC Level (Tablet & HP Android)',
+    headline: 'Ubah Tablet & Smartphone Android Anda Menjadi Laptop Kerja Profesional',
     oldPrice: 'Rp85.000',
     price: 'Rp60.000',
     saveAmount: 'Rp25.000',
-    desc: 'Bebaskan batasan aplikasi mobile. Dapatkan tampilan desktop ribbon bar penuh layaknya Microsoft Office di PC: formula Excel lengkap, Word presisi, & presentasi PPT mulus.',
+    desc: 'Bebaskan batasan aplikasi mobile. Dapatkan tampilan desktop ribbon bar penuh layaknya Microsoft Office di PC untuk Tablet maupun HP Android Anda: formula Excel lengkap, Word presisi, & presentasi PPT mulus.',
     coverImage: 'assets/images/wps-cover.jpg',
     waNumber: '082392048485',
-    waMessage: 'Halo Admin, saya mau order Setup WPS Office PC Level untuk Tablet Android.',
-    btnText: 'Pesan WPS Tablet via WhatsApp (Rp60.000)',
+    waMessage: 'Halo Admin, saya mau order Setup WPS Office PC Level untuk Tablet / HP Android.',
+    btnText: 'Pesan WPS PC Level via WA (Rp60.000)',
     rating: 4.9,
-    ordersCount: 520,
+    ordersCount: 540,
     isGallery: true,
     features: [
+      'Bisa Dipasang di Semua Tablet & HP Android (Samsung, Xiaomi, Oppo, Vivo, Infinix, dll)',
       'Interface Ribbon Bar Desktop Lengkap (Home, Insert, Layout, Formulas)',
       'Rumus Excel Bebas Limit: VLOOKUP, XLOOKUP, Pivot Table, Multi-IF',
       'Multi-Tab Browsing: Buka banyak dokumen kerja sekaligus',
@@ -27,52 +28,53 @@ export const PRODUCTS: Product[] = [
       'Dipandu Remote Step-by-Step Sampai 100% Aktif & Siap Kerja'
     ],
     specs: [
-      { label: 'Tampilan', value: 'Desktop Windows 10 Ribbon Bar penuh tanpa pemotongan menu' },
+      { label: 'Dukungan Perangkat', value: 'Bisa untuk Tablet Android & Smartphone / HP Android (Xiaomi, Samsung, Oppo, Vivo, Realme, Infinix, Poco, Huawei, dll)' },
+      { label: 'Tampilan Antarmuka', value: 'Desktop Windows 10 Ribbon Bar penuh tanpa pemotongan menu' },
       { label: 'Paket Software', value: 'WPS Writer (Word), Spreadsheets (Excel), Presentation (PPT)' },
-      { label: 'Dukungan Rumus', value: 'VLOOKUP, Pivot Table, IF bertingkat, Conditional Formatting' },
+      { label: 'Dukungan Rumus', value: 'VLOOKUP, XLOOKUP, Pivot Table, IF bertingkat, Conditional Formatting' },
       { label: 'Dukungan Hardware', value: 'Keyboard Bluetooth, Wireless Mouse, Stylus Pen, HDMI Proyektor' },
-      { label: 'Kompatibilitas', value: 'Android 8 s/d Android 14+ (Xiaomi Pad, Samsung Tab, Huawei, Lenovo, dll)' },
-      { label: 'Garansi', value: 'Garansi uang kembali jika aplikasi tidak berhasil aktif' }
+      { label: 'Kompatibilitas OS', value: 'Android 8.0 s/d Android 14+ (Semua merk Tablet & HP Android)' },
+      { label: 'Layanan Garansi', value: 'Garansi uang kembali jika aplikasi tidak berhasil aktif di perangkat Anda' }
     ],
     gallery: [
       {
         id: 'cover',
         tabName: '📱 Foto Setup',
         badge: 'Setup Nyata',
-        title: 'Foto Nyata Tablet + Keyboard Stand',
-        desc: 'Tampilan fisik nyata tablet Android dipasangkan dengan keyboard dan mouse.',
+        title: '1. Foto Setup Nyata (Tablet & HP Android + Keyboard Stand)',
+        desc: 'Tampilan fisik nyata perangkat Android dipadukan dengan keyboard dan mouse wireless layaknya mini-laptop.',
         image: 'assets/images/wps-cover.jpg'
       },
       {
         id: 'desktop',
         tabName: '🖥️ Desktop',
         badge: 'Interface PC',
-        title: 'Tampilan Desktop Windows di Tablet',
-        desc: 'Interface desktop Windows 10 penuh dengan taskbar, start menu, dan folder file.',
+        title: '2. Tampilan Desktop Windows di Tablet & HP Android',
+        desc: 'Interface desktop Windows 10 penuh dengan taskbar bawah, start menu, dan folder file system layaknya monitor komputer.',
         image: 'assets/images/wps-desktop.jpg'
       },
       {
         id: 'word',
         tabName: '📝 Word PC',
         badge: 'Ribbon Penuh',
-        title: 'WPS Writer (Word PC Level)',
-        desc: 'Toolbar ribbon bar laptop lengkap untuk format dokumen, margins, dan tabel rapi.',
+        title: '3. WPS Writer (Word PC Level Ribbon Bar Lengkap)',
+        desc: 'Toolbar ribbon bar laptop lengkap (Home, Insert, Page Layout, References, Review, View) untuk format dokumen, margins, dan tabel rapi.',
         image: 'assets/images/wps-word.jpg'
       },
       {
         id: 'excel',
         tabName: '📈 Excel PC',
         badge: 'Formula Lengkap',
-        title: 'WPS Spreadsheets (Excel PC Level)',
-        desc: 'Formula analitik lengkap (VLOOKUP, Pivot Table, IF bercabang) lancar di tablet.',
+        title: '4. WPS Spreadsheets (Excel PC Level Rumus Lengkap)',
+        desc: 'Formula analitik lengkap tanpa limit (VLOOKUP, Pivot Table, IF bercabang) siap untuk pengolahan data kantor berat di Tablet atau HP.',
         image: 'assets/images/wps-excel.jpg'
       },
       {
         id: 'ppt',
         tabName: '📊 PPT PC',
         badge: 'Slide Dinamis',
-        title: 'WPS Presentation (PowerPoint PC Level)',
-        desc: 'Desain presentasi bisnis & kuliah dengan transisi halus dan animasi laptop.',
+        title: '5. WPS Presentation (PowerPoint PC Level)',
+        desc: 'Desain presentasi bisnis & kuliah profesional dengan slide designer, animasi halus, dan dukungan proyektor eksternal.',
         image: 'assets/images/wps-ppt.jpg'
       }
     ]
@@ -115,16 +117,16 @@ export const PRODUCTS: Product[] = [
 
 export const FAQS: FaqItem[] = [
   {
-    question: 'Apakah hasil akhirnya berupa kartu fisik atau elektronik?',
+    question: 'Apakah WPS PC Level ini hanya bisa di Tablet atau bisa di HP Android juga?',
+    answer: 'Bisa di keduanya! WPS Office PC Level ini mendukung Tablet Android (seperti Xiaomi Pad, Redmi Pad, Samsung Tab, Huawei MatePad, Lenovo Tab) DAN juga bisa dipasang di Smartphone / HP Android (Xiaomi, Samsung, Oppo, Vivo, Realme, Infinix, Poco, dll) dengan OS Android 8 hingga 14+.'
+  },
+  {
+    question: 'Apakah hasil akhir NPWP berupa kartu fisik atau elektronik?',
     answer: 'Layanan kami adalah bantuan pendaftaran NPWP Elektronik resmi langsung ke sistem Direktorat Jenderal Pajak (DJP). Hasil akhirnya berupa file resmi Kartu NPWP Elektronik Digital dan Surat Keterangan Terdaftar (SKT) format PDF asli beresolusi tinggi. Berkas PDF resmi ini sah 100% dan langsung valid digunakan untuk melamar kerja, perbankan, KPR, atau dicetak sendiri jika diperlukan.'
   },
   {
     question: 'Kenapa lebih baik pakai jasa pendaftaran ini daripada daftar sendiri?',
     answer: 'Pendaftaran mandiri di web e-Reg DJP seringkali membingungkan bagi orang awam (pengisian status K/TK, kode klasifikasi usaha KLU, error server, atau verifikasi email/SMS yang sering gagal). Melalui layanan kami, Anda cukup mengirimkan data pokok via WhatsApp, dan tim kami yang mengurus pengisian secara profesional sampai terbit tuntas.'
-  },
-  {
-    question: 'Tablet Android apa saja yang mendukung WPS Office PC Level?',
-    answer: 'Mendukung semua tipe tablet Android populer seperti Xiaomi Pad, Redmi Pad, Poco Pad, Samsung Galaxy Tab, Huawei MatePad, Lenovo Tab, Realme Pad, dan smartphone Android (OS Android 8 hingga Android 14+). Kami bantu pandu sampai berhasil.'
   },
   {
     question: 'Berapa lama proses pengerjaannya?',

@@ -17,7 +17,7 @@ export const Hero: React.FC<HeroProps> = ({ activeFilter, onFilterChange }) => {
 
       {/* Main Title */}
       <h1 className="text-2xl sm:text-4xl font-extrabold text-surface-950 tracking-tight leading-tight">
-        Katalog Layanan Digital & Setup Tablet
+        Katalog Layanan Digital & Setup Tablet / HP
       </h1>
 
       {/* Clean Subtitle */}
@@ -61,7 +61,7 @@ export const Hero: React.FC<HeroProps> = ({ activeFilter, onFilterChange }) => {
               : 'bg-surface-100 text-surface-600 hover:bg-surface-200'
           }`}
         >
-          💻 WPS Tablet (60k)
+          💻 WPS Tablet & HP (60k)
         </button>
         <button
           onClick={() => onFilterChange('npwp')}

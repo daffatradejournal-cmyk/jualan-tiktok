@@ -29,14 +29,14 @@ export const StickyMobileBar: React.FC = () => {
 
         {/* WPS Button */}
         <a
-          href="https://wa.me/6282392048485?text=Halo%20Admin%2C%20saya%20mau%20order%20WPS%20Office%20PC%20Level%20Tablet"
+          href="https://wa.me/6282392048485?text=Halo%20Admin%2C%20saya%20mau%20order%20WPS%20Office%20PC%20Level%20Tablet%20atau%20HP%20Android"
           target="_blank"
           rel="noopener noreferrer"
           onClick={triggerConfetti}
           className="flex-1 inline-flex items-center justify-center gap-1.5 bg-[#25D366] active:scale-95 text-white font-bold text-xs py-2.5 px-2 rounded-xl shadow-sm"
         >
           <Laptop className="w-3.5 h-3.5 fill-white" />
-          <span>WPS (60k)</span>
+          <span>WPS Tablet/HP (60k)</span>
         </a>
       </div>
     </div>

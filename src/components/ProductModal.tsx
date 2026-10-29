@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Product } from '../types';
-import { X, MessageCircle, ShieldCheck, Check, Sparkles } from 'lucide-react';
+import { X, MessageCircle, ShieldCheck, Check, Sparkles, ChevronDown, Smartphone, Laptop } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 interface ProductModalProps {
@@ -53,7 +53,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
             className="fixed inset-0 bg-surface-950/80 backdrop-blur-md cursor-pointer"
           />
 
-          {/* Modal Sheet with Tactile Spring Entrance Animation */}
+          {/* Modal Sheet with Spring Entrance Animation */}
           <motion.div
             initial={{ opacity: 0, y: '100%', scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -66,7 +66,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
                 <span className="text-xs font-bold text-surface-900 uppercase tracking-wider">
-                  Detail Layanan & Galeri Foto
+                  Rincian Spesifikasi & Galeri
                 </span>
               </div>
               <button
@@ -97,6 +97,17 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
                   {product.title}
                 </h2>
 
+                {/* Compatibility Callout for WPS (Tablet & HP Android) */}
+                {isWps && (
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-brand-50/80 border border-brand-200/90 text-brand-900 text-xs font-bold">
+                    <div className="flex items-center gap-1 text-brand-600">
+                      <Laptop className="w-4 h-4" />
+                      <Smartphone className="w-4 h-4" />
+                    </div>
+                    <span>Support: Semua Tablet Android & Smartphone / HP Android</span>
+                  </div>
+                )}
+
                 <p className="text-xs sm:text-sm text-surface-600 leading-relaxed">
                   {product.desc}
                 </p>
@@ -121,17 +132,47 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
                   </span>
                 </div>
 
-                {/* Top WhatsApp Order Button */}
-                <a
-                  href={waLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={handleWaOrder}
-                  className="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba59] active:scale-98 text-white font-extrabold text-sm py-3.5 px-4 rounded-2xl shadow-md transition-all"
-                >
-                  <MessageCircle className="w-4 h-4 fill-white" />
-                  <span>{product.btnText}</span>
-                </a>
+                {/* ATTRACTIVE HOOK: REASON TO SCROLL DOWN (Bikin Hal Menarik Buat Scroll) */}
+                <div className="p-4 rounded-2xl bg-gradient-to-br from-surface-900 to-surface-950 text-white shadow-md border border-surface-800">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-[11px] font-extrabold uppercase tracking-wider text-amber-400 flex items-center gap-1">
+                      <Sparkles className="w-3.5 h-3.5" /> Bukti Nyata Tampilan PC
+                    </span>
+                    <span className="text-[10px] bg-white/10 px-2 py-0.5 rounded text-surface-300 font-medium">
+                      5 Foto Lengkap
+                    </span>
+                  </div>
+                  <h4 className="text-sm font-bold text-white mb-2 leading-snug">
+                    {isWps 
+                      ? 'Lihat 5 foto screenshot interface laptop & bukti setup di bawah 👇'
+                      : 'Lihat contoh kartu resmi & panduan berkas digital di bawah 👇'}
+                  </h4>
+
+                  {/* Feature Quick Chips */}
+                  <div className="flex flex-wrap gap-1.5 text-[11px] font-semibold text-surface-300">
+                    {isWps ? (
+                      <>
+                        <span className="bg-white/10 px-2 py-0.5 rounded">🖥️ Desktop Windows 10</span>
+                        <span className="bg-white/10 px-2 py-0.5 rounded">📝 Ribbon Word</span>
+                        <span className="bg-white/10 px-2 py-0.5 rounded">📈 Rumus Excel Lengkap</span>
+                        <span className="bg-white/10 px-2 py-0.5 rounded">📱 Tablet & HP Android</span>
+                      </>
+                    ) : (
+                      <>
+                        <span className="bg-white/10 px-2 py-0.5 rounded">💳 Kartu Resmi DJP</span>
+                        <span className="bg-white/10 px-2 py-0.5 rounded">📄 PDF High-Res Asli</span>
+                        <span className="bg-white/10 px-2 py-0.5 rounded">⚡ Selesai 1-3 Jam</span>
+                      </>
+                    )}
+                  </div>
+
+                  {/* Animated Bouncing Scroll Teaser */}
+                  <div className="mt-3 pt-3 border-t border-white/10 flex items-center justify-center gap-1.5 text-xs font-bold text-amber-300 animate-bounce">
+                    <span>Gulir ke bawah untuk melihat foto & rincian</span>
+                    <ChevronDown className="w-4 h-4" />
+                  </div>
+                </div>
+
               </div>
 
               {/* FOTO-FOTO SPESIFIKASI BERJEJER KE BAWAH (SATU FOTO SATU JUDUL DIATASNYA) */}
@@ -139,10 +180,10 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
                 <div className="text-center sm:text-left">
                   <h3 className="text-sm sm:text-base font-extrabold text-surface-950 uppercase tracking-wider flex items-center gap-2 justify-center sm:justify-start">
                     <span>📸</span>
-                    <span>Galeri Bukti & Tampilan Layar:</span>
+                    <span>Galeri Foto & Bukti Tampilan:</span>
                   </h3>
                   <p className="text-xs text-surface-500 mt-0.5">
-                    Geser ke bawah untuk melihat detail seluruh foto spesifikasi.
+                    Tampilan asli di perangkat Android (bisa digeser ke bawah secara utuh).
                   </p>
                 </div>
 
@@ -245,7 +286,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
                 </div>
               </div>
 
-              {/* Bottom WhatsApp Order Action */}
+              {/* Bottom WhatsApp Order Action (SATU TOMBOL DI BAWAH SESUAI REQUEST) */}
               <div className="pt-4 pb-2 border-t border-surface-200/80">
                 <a
                   href={waLink}
@@ -258,7 +299,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
                   <span>{product.btnText}</span>
                 </a>
                 <p className="text-center text-[11px] text-surface-500 mt-2">
-                  🔒 Chat langsung dengan admin. Respon cepat tanpa bot.
+                  🔒 Chat langsung dengan admin via WhatsApp. Respon cepat tanpa bot.
                 </p>
               </div>
 
