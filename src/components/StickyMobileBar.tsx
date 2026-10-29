@@ -17,14 +17,14 @@ export const StickyMobileBar: React.FC = () => {
       <div className="flex items-center justify-between gap-2 max-w-sm mx-auto">
         {/* NPWP Button */}
         <a
-          href="https://wa.me/6285121342871?text=Halo%20Admin%2C%20saya%20mau%20order%20Jasa%20Pembuatan%20NPWP%20Resmi"
+          href="https://wa.me/6285121342871?text=Halo%20Admin%2C%20saya%20mau%20dibantu%20pendaftaran%20NPWP%20Elektronik%20resmi%20(terima%20beres)"
           target="_blank"
           rel="noopener noreferrer"
           onClick={triggerConfetti}
           className="flex-1 inline-flex items-center justify-center gap-1.5 bg-surface-900 active:scale-95 text-white font-bold text-xs py-2.5 px-2 rounded-xl shadow-sm"
         >
           <FileText className="w-3.5 h-3.5 text-emerald-400" />
-          <span>NPWP (80k)</span>
+          <span>NPWP Elektronik (80k)</span>
         </a>
 
         {/* WPS Button */}

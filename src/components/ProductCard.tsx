@@ -52,8 +52,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onOpenModal }
                 alt={product.title}
                 className="max-h-full max-w-full object-contain rounded-xl group-hover:scale-[1.02] transition-transform duration-300"
               />
-              <div className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">
-                Kartu Resmi DJP
+              <div className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1">
+                <span>NPWP Elektronik (Digital PDF)</span>
+              </div>
+              <div className="absolute bottom-3 left-3 bg-surface-950/80 backdrop-blur-md text-surface-200 text-[10px] font-medium px-2 py-0.5 rounded border border-white/10 hidden sm:inline-block">
+                Output: File PDF Digital Resmi Sah DJP
               </div>
             </div>
           )}

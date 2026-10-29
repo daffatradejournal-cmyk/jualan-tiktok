@@ -79,44 +79,48 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'npwp',
-    category: 'Layanan Pajak Resmi',
-    badge: 'Proses Kilat 1-3 Jam',
+    category: 'Layanan Pajak Digital',
+    badge: 'Terima Beres (1-3 Jam)',
     discountBadge: 'Diskon 33%',
-    title: 'Jasa Pembuatan NPWP Online Resmi (DJP)',
-    headline: 'NPWP Pribadi Terdaftar Sah di Server DJP Tanpa Antre di Kantor Pajak',
+    title: 'Jasa Pendaftaran NPWP Elektronik Resmi (DJP)',
+    headline: 'Terima Beres Tanpa Pusing Isi Formulir e-Reg DJP yang Rumit',
     oldPrice: 'Rp120.000',
     price: 'Rp80.000',
     saveAmount: 'Rp40.000',
-    desc: 'Pembuatan Nomor Pokok Wajib Pajak (NPWP) Pribadi langsung diverifikasi resmi di server e-Registration Direktorat Jenderal Pajak RI. Praktis tanpa perlu datang ke kantor pajak.',
+    desc: 'Daftar mandiri sering gagal atau bingung isi form pajak? Serahkan ke kami. Terima beres tanpa ribet: pendaftaran resmi diproseskan sampai terbit file Kartu NPWP Elektronik & SKT PDF resmi dari server Ditjen Pajak RI.',
     coverImage: 'assets/images/npwp-cover.jpg',
     waNumber: '085121342871',
-    waMessage: 'Halo Admin, saya mau order Jasa Pembuatan NPWP Online Resmi.',
-    btnText: 'Pesan Jasa NPWP via WhatsApp (Rp80.000)',
-    rating: 4.95,
-    ordersCount: 940,
+    waMessage: 'Halo Admin, saya mau dibantu pendaftaran NPWP Elektronik resmi (terima beres).',
+    btnText: 'Pesan Jasa NPWP Elektronik via WA (Rp80.000)',
+    rating: 4.96,
+    ordersCount: 960,
     isGallery: false,
     features: [
-      '100% Sah & Terverifikasi di Server Resmi Ditjen Pajak (DJP)',
-      'Dapat Kartu NPWP Digital & Surat Keterangan Terdaftar (SKT) PDF Resmi',
-      'Syarat Simpel: Cukup kirim foto KTP & data pokok via WhatsApp',
-      'Valid untuk Syarat Kerja, Penggajian Kantor, Bank, KPR, & Usaha',
-      'Privasi Terjamin: Data pribadi langsung dihapus setelah pendaftaran selesai'
+      'Terima Beres: Cukup kirim foto KTP & data pokok via WA, formulir kami yang urus',
+      'Bebas Pusing: Gak perlu bingung isi kode KLU, status pajak, atau error server e-Reg',
+      'Output Resmi: File Kartu NPWP Elektronik & Surat Keterangan Terdaftar (SKT) PDF Asli',
+      'Sah 100% untuk Syarat Kerja, Pembukaan Rekening Bank, KPR, dan Legalitas Usaha',
+      'Privasi Terjamin: Data pribadi Anda langsung dihapus permanen begitu nomor NPWP terbit'
     ],
     specs: [
-      { label: 'Status Resmi', value: 'e-Registration Direktorat Jenderal Pajak (Kementerian Keuangan RI)' },
-      { label: 'Berkas Diterima', value: 'File Kartu NPWP Digital & Surat Keterangan Terdaftar (SKT) format PDF asli' },
-      { label: 'Keperluan', value: 'Melamar pekerjaan, payroll kantor, buka tabungan bank, KPR, legalitas usaha' },
-      { label: 'Persyaratan', value: 'Foto e-KTP & data diri pokok (dibantu pengisian formulir sampai beres)' },
-      { label: 'Waktu Proses', value: 'Selesai 1–3 Jam (menyesuaikan kelancaran server DJP)' },
-      { label: 'Keamanan Data', value: 'Data pribadi dijamin aman dan langsung dihapus permanen setelah terbit' }
+      { label: 'Bentuk Berkas', value: 'NPWP Elektronik Digital & SKT Resmi format PDF resolusi tinggi (bukan kartu fisik/plastik)' },
+      { label: 'Status Keabsahan', value: '100% Sah & Terverifikasi di Server e-Registration Ditjen Pajak (Kemenkeu RI)' },
+      { label: 'Keperluan Valid', value: 'Syarat lamaran kerja, payroll kantor, buka tabungan bank, KPR, pinjaman usaha' },
+      { label: 'Kemudahan', value: 'Terima beres, tidak perlu pusing antre di kantor pajak atau gagal verifikasi mandiri' },
+      { label: 'Estimasi Waktu', value: 'Selesai 1–3 Jam (menyesuaikan antrean server DJP)' },
+      { label: 'Jaminan Privasi', value: 'Data pribadi hanya untuk pendaftaran resmi dan langsung dihapus permanen' }
     ]
   }
 ];
 
 export const FAQS: FaqItem[] = [
   {
-    question: 'Apakah NPWP ini resmi dan terdaftar di server DJP?',
-    answer: 'Ya, 100% resmi. Pendaftaran diproses langsung melalui sistem resmi e-Registration Direktorat Jenderal Pajak (DJP). Anda akan menerima Kartu NPWP Digital dan Surat Keterangan Terdaftar (SKT) PDF resmi yang sah dan valid untuk melamar kerja, perbankan, KPR, maupun administrasi legalitas.'
+    question: 'Apakah hasil akhirnya berupa kartu fisik atau elektronik?',
+    answer: 'Layanan kami adalah bantuan pendaftaran NPWP Elektronik resmi langsung ke sistem Direktorat Jenderal Pajak (DJP). Hasil akhirnya berupa file resmi Kartu NPWP Elektronik Digital dan Surat Keterangan Terdaftar (SKT) format PDF asli beresolusi tinggi. Berkas PDF resmi ini sah 100% dan langsung valid digunakan untuk melamar kerja, perbankan, KPR, atau dicetak sendiri jika diperlukan.'
+  },
+  {
+    question: 'Kenapa lebih baik pakai jasa pendaftaran ini daripada daftar sendiri?',
+    answer: 'Pendaftaran mandiri di web e-Reg DJP seringkali membingungkan bagi orang awam (pengisian status K/TK, kode klasifikasi usaha KLU, error server, atau verifikasi email/SMS yang sering gagal). Melalui layanan kami, Anda cukup mengirimkan data pokok via WhatsApp, dan tim kami yang mengurus pengisian secara profesional sampai terbit tuntas.'
   },
   {
     question: 'Tablet Android apa saja yang mendukung WPS Office PC Level?',
@@ -124,7 +128,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: 'Berapa lama proses pengerjaannya?',
-    answer: 'Untuk NPWP biasanya selesai dalam 1–3 jam (tergantung antrean server DJP). Untuk pemasangan WPS PC Level membutuhkan waktu sekitar 15–20 menit dengan panduan remote interaktif lewat WhatsApp.'
+    answer: 'Untuk NPWP Elektronik biasanya selesai dalam 1–3 jam (tergantung kelancaran antrean server DJP). Untuk pemasangan WPS PC Level membutuhkan waktu sekitar 15–20 menit dengan panduan remote interaktif lewat WhatsApp.'
   },
   {
     question: 'Bagaimana metode pembayarannya?',

@@ -71,7 +71,7 @@ export const Hero: React.FC<HeroProps> = ({ activeFilter, onFilterChange }) => {
               : 'bg-surface-100 text-surface-600 hover:bg-surface-200'
           }`}
         >
-          💳 Jasa NPWP (80k)
+          💳 NPWP Elektronik (80k)
         </button>
       </div>
     </section>

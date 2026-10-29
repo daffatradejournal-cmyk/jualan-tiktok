@@ -27,13 +27,13 @@ export const Footer: React.FC = () => {
               <span>Admin WPS: 0823-9204-8485</span>
             </a>
             <a
-              href="https://wa.me/6285121342871?text=Halo%20Admin%2C%20tanya%20Jasa%20NPWP"
+              href="https://wa.me/6285121342871?text=Halo%20Admin%2C%20tanya%20Jasa%20NPWP%20Elektronik"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/15 px-2.5 py-1 rounded-lg text-surface-300 font-semibold"
             >
               <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Admin NPWP: 0851-2134-2871</span>
+              <span>Admin NPWP Elektronik: 0851-2134-2871</span>
             </a>
           </div>
 
@@ -41,7 +41,7 @@ export const Footer: React.FC = () => {
 
         <div className="pt-4 text-center text-surface-400 text-[11px] leading-relaxed">
           <p>&copy; {new Date().getFullYear()} SolusiDigital Indonesia. Layanan Asistensi Digital Terpercaya.</p>
-          <p className="mt-0.5 text-surface-500">Pendaftaran NPWP diproses melalui portal resmi e-Registration Ditjen Pajak RI.</p>
+          <p className="mt-0.5 text-surface-500">Bantuan pendaftaran NPWP Elektronik diproses resmi melalui sistem e-Registration Ditjen Pajak RI.</p>
         </div>
       </div>
     </footer>
