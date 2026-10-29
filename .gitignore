@@ -1,4 +1,17 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build Output
+dist/
+dist-ssr/
+*.local
+
+# System & IDE
 .DS_Store
 Thumbs.db
 *.log
 .gemini/
+.vscode/
+.idea/
