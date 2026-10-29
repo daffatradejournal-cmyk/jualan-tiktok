@@ -97,14 +97,17 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
                   {product.title}
                 </h2>
 
-                {/* Compatibility Callout for WPS (Tablet & HP Android) */}
+                {/* Compatibility Callout for WPS (Tablet & HP Android + Spek Minimal 4/64) */}
                 {isWps && (
-                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-brand-50/80 border border-brand-200/90 text-brand-900 text-xs font-bold">
-                    <div className="flex items-center gap-1 text-brand-600">
-                      <Laptop className="w-4 h-4" />
-                      <Smartphone className="w-4 h-4" />
+                  <div className="flex flex-wrap items-center justify-between gap-2 p-3 rounded-2xl bg-brand-50/90 border border-brand-200 text-brand-950 text-xs font-bold">
+                    <div className="flex items-center gap-1.5 text-brand-700">
+                      <Laptop className="w-4 h-4 text-brand-600" />
+                      <Smartphone className="w-4 h-4 text-brand-600" />
+                      <span>Tablet & Smartphone / HP Android</span>
                     </div>
-                    <span>Support: Semua Tablet Android & Smartphone / HP Android</span>
+                    <span className="bg-brand-600 text-white text-[11px] font-extrabold px-2.5 py-1 rounded-lg shadow-sm">
+                      ⚡ Min. Spek: 4/64 GB
+                    </span>
                   </div>
                 )}
 
@@ -152,6 +155,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) 
                   <div className="flex flex-wrap gap-1.5 text-[11px] font-semibold text-surface-300">
                     {isWps ? (
                       <>
+                        <span className="bg-amber-400/20 text-amber-300 border border-amber-400/30 px-2 py-0.5 rounded font-bold">⚡ Spek Min: 4/64 GB</span>
                         <span className="bg-white/10 px-2 py-0.5 rounded">🖥️ Desktop Windows 10</span>
                         <span className="bg-white/10 px-2 py-0.5 rounded">📝 Ribbon Word</span>
                         <span className="bg-white/10 px-2 py-0.5 rounded">📈 Rumus Excel Lengkap</span>

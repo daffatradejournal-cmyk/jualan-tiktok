@@ -41,7 +41,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onOpenModal }
                 className="max-h-full max-w-full object-contain rounded-xl group-hover:scale-[1.02] transition-transform duration-300"
               />
               <div className="absolute top-3 left-3 bg-brand-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm flex items-center gap-1">
-                <span>Bisa di Tablet & HP Android</span>
+                <span>Bisa di Tablet & HP (Min. 4/64 GB)</span>
               </div>
             </div>
           ) : (

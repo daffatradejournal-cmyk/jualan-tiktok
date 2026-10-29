@@ -20,7 +20,7 @@ export const PRODUCTS: Product[] = [
     ordersCount: 540,
     isGallery: true,
     features: [
-      'Bisa Dipasang di Semua Tablet & HP Android (Samsung, Xiaomi, Oppo, Vivo, Infinix, dll)',
+      'Bisa Dipasang di Semua Tablet & HP Android (Spek Minimal RAM 4 GB / ROM 64 GB)',
       'Interface Ribbon Bar Desktop Lengkap (Home, Insert, Layout, Formulas)',
       'Rumus Excel Bebas Limit: VLOOKUP, XLOOKUP, Pivot Table, Multi-IF',
       'Multi-Tab Browsing: Buka banyak dokumen kerja sekaligus',
@@ -28,12 +28,13 @@ export const PRODUCTS: Product[] = [
       'Dipandu Remote Step-by-Step Sampai 100% Aktif & Siap Kerja'
     ],
     specs: [
+      { label: 'Spesifikasi Minimal', value: 'RAM Minimal 4 GB & Memori Internal Minimal 64 GB (4/64 GB) agar lancar tanpa lag' },
       { label: 'Dukungan Perangkat', value: 'Bisa untuk Tablet Android & Smartphone / HP Android (Xiaomi, Samsung, Oppo, Vivo, Realme, Infinix, Poco, Huawei, dll)' },
       { label: 'Tampilan Antarmuka', value: 'Desktop Windows 10 Ribbon Bar penuh tanpa pemotongan menu' },
       { label: 'Paket Software', value: 'WPS Writer (Word), Spreadsheets (Excel), Presentation (PPT)' },
       { label: 'Dukungan Rumus', value: 'VLOOKUP, XLOOKUP, Pivot Table, IF bertingkat, Conditional Formatting' },
       { label: 'Dukungan Hardware', value: 'Keyboard Bluetooth, Wireless Mouse, Stylus Pen, HDMI Proyektor' },
-      { label: 'Kompatibilitas OS', value: 'Android 8.0 s/d Android 14+ (Semua merk Tablet & HP Android)' },
+      { label: 'Kompatibilitas OS', value: 'Android 8.0 s/d Android 14+ (Semua merk Tablet & HP Android min. 4/64)' },
       { label: 'Layanan Garansi', value: 'Garansi uang kembali jika aplikasi tidak berhasil aktif di perangkat Anda' }
     ],
     gallery: [
@@ -117,8 +118,8 @@ export const PRODUCTS: Product[] = [
 
 export const FAQS: FaqItem[] = [
   {
-    question: 'Apakah WPS PC Level ini hanya bisa di Tablet atau bisa di HP Android juga?',
-    answer: 'Bisa di keduanya! WPS Office PC Level ini mendukung Tablet Android (seperti Xiaomi Pad, Redmi Pad, Samsung Tab, Huawei MatePad, Lenovo Tab) DAN juga bisa dipasang di Smartphone / HP Android (Xiaomi, Samsung, Oppo, Vivo, Realme, Infinix, Poco, dll) dengan OS Android 8 hingga 14+.'
+    question: 'Apakah WPS PC Level bisa di HP Android dan berapa spesifikasi minimalnya?',
+    answer: 'Bisa di Tablet maupun HP Android! Syarat spesifikasi minimal perangkat adalah RAM 4 GB dan memori internal 64 GB (4/64 GB) dengan OS Android 8.0 ke atas. Spesifikasi ini memastikan aplikasi berjalan ringan, stabil, dan lancar tanpa lag.'
   },
   {
     question: 'Apakah hasil akhir NPWP berupa kartu fisik atau elektronik?',
